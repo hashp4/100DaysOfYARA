@@ -2,8 +2,12 @@ rule MAL_RANSOM_Wannacry {
    meta:
       description = "YARA Rule for WannaCry detection"
       author = "hashp4 (inspired by Florian Roth)"
+      version = "1.0"
       date = "2023-11-27"
       hash = "24d004a104d4d54034dbcffc2a4b19a11f39008a575aa614ea04703480b1022c"
+      reference = "https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe"
+      DaysofYARA = "1/100"
+
    strings:
       $string1 = "icacls . /grant Everyone:F /T /C /Q" fullword ascii
       $string2 = "tasksche.exe" fullword ascii
@@ -14,6 +18,7 @@ rule MAL_RANSOM_Wannacry {
 
       $unc1 = "\\\\192.168.56.20\\IPC$" fullword wide
       $unc2 = "\\\\172.16.99.5\\IPC$" fullword wide
+
    condition:
       ( 1 of ($string*) and 1 of ($unc*) ) and filesize < 10000KB
 }
