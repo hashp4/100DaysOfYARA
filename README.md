@@ -11,7 +11,8 @@ My journey into malware analysis *concretely* started last year. I focused mainl
 ## ⌛Progression 
 Below, you will find the current state of my progression. 
 
-- [X] Day 1: YARA rule for WannaCry detection. The sample I used is from the PMAT course. You can find it [here](https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe)
+- [X] Day 1: YARA rule for WannaCry detection. The sample I used is from the PMAT course. You can find it [here](https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe).
+- [X] Day 2 : YARA rule for process hollowing detection. This rule is based on the **sub-technique** T1055.012 that you can find on [MITRE ATT&CK](https://attack.mitre.org/techniques/T1055/012/). 
 
 ## 📖Source / Documentation
 Here are all the resources I used during this challenge. I will try to update it regularly. 
@@ -24,3 +25,9 @@ Here are all the resources I used during this challenge. I will try to update it
 
 - Thomas Roccia's Blog (SecurityBreak) - #100DaysOfYara challenge
 > https://blog.securitybreak.io/100daysofyara-challenge-04c966eab1ae
+
+- MalAPI.io by mrd0x
+> https://malapi.io/
+
+- MITRE ATT&CK (for TTPs)
+> https://attack.mitre.org/
