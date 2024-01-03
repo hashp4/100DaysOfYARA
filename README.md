@@ -13,6 +13,7 @@ Below, you will find the current state of my progression.
 
 - [X] Day 1: YARA rule for WannaCry detection. The sample I used is from the PMAT course. You can find it [here](https://github.com/HuskyHacks/PMAT-labs/tree/main/labs/4-1.Bossfight-wannacry.exe).
 - [X] Day 2 : YARA rule for process hollowing detection. This rule is based on the **sub-technique** T1055.012 that you can find on [MITRE ATT&CK](https://attack.mitre.org/techniques/T1055/012/). 
+- [X] Day 3 : YARA rule for detection potential keylogging Windows malware. The rule is based both on the **sub-technique** [T056.001](https://attack.mitre.org/techniques/T1056/001/) and the informations on [MalAPI.io](https://malapi.io/).
 
 ## 📖Source / Documentation
 Here are all the resources I used during this challenge. I will try to update it regularly. 
